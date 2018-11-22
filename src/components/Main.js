@@ -5,7 +5,7 @@ import nba from 'nba';
 
 export class Main extends React.Component {
     state = {
-        playerId: nba.findPlayer('Stephen Curry').playerId,
+        playerId: nba.findPlayer('Lebron James').playerId,
         playerInfo: {},
 
     }
@@ -23,7 +23,7 @@ export class Main extends React.Component {
     render() {
         return (
             <div className="main">
-                <Profile playerId={this.state.playerId} playerInfo={this.state.playerInfo}/>
+                <Profile playerInfo={this.state.playerInfo} />
                 <ShotChart playerId={this.state.playerId}/>
             </div>
         );

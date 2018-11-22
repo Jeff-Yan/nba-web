@@ -1,0 +1,1 @@
+export const PROFILE_PIC_URL_PREFIX = 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190'

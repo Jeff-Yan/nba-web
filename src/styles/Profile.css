@@ -2,3 +2,7 @@
     width: 200px;
     background-color: red;
 }
+
+.player-image {
+    width: 100%;
+}

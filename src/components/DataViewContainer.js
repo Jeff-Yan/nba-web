@@ -1,4 +1,5 @@
 import React from 'react';
+import { Row, Col } from 'antd';
 import { ShotChart } from './ShotChart';
 import { CountSlider } from './CountSlider';
 
@@ -17,7 +18,16 @@ export class DataViewContainer extends React.Component {
                     playerId={this.props.playerId}
                     minCount={this.state.minCount}
                 />
-                <CountSlider onMinCountChange={this.onMinCountChange}/>
+                <div className="filters">
+                    <Row className="filter-row">
+                        <Col span={2} offset={3} className="filter-label" >Shots:</Col>
+                        <Col span={16} className="filter-control">
+                            <CountSlider onMinCountChange={this.onMinCountChange}/>
+                        </Col>
+                    </Row>
+                </div>
+
+
             </div>
         );
     }

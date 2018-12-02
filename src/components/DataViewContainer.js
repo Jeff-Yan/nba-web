@@ -35,6 +35,14 @@ export class DataViewContainer extends React.Component {
                             <CountSlider onMinCountChange={_.debounce(this.onMinCountChange, 500)} className="filter-control" />
                         </Col>
                     </Row>
+                    <Row className="filter-row">
+                        <Col span={10} offset={3}>
+                            <RadioGroup onChange={this.onChartTypeChange} value={this.state.chartType} className="filter-control" >
+                                <Radio value="hexbin">Hexbin</Radio>
+                                <Radio value="scatter">Scatter</Radio>
+                            </RadioGroup>
+                        </Col>
+                    </Row>
 
                 </div>
 

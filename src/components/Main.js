@@ -2,7 +2,8 @@ import React from 'react';
 import {ShotChart} from "./ShotChart";
 import {Profile} from "./Profile";
 import nba from 'nba';
-import { CountSlider } from "./CountSlider"
+import { CountSlider } from "./CountSlider";
+import { DataViewContainer} from "./DataViewContainer";
 
 export class Main extends React.Component {
     state = {
@@ -25,8 +26,7 @@ export class Main extends React.Component {
         return (
             <div className="main">
                 <Profile playerInfo={this.state.playerInfo} />
-                <ShotChart playerId={this.state.playerId}/>
-                <CountSlider/>
+                <DataViewContainer playerId={this.state.playerId}/>
             </div>
         );
     }
